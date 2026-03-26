@@ -9,5 +9,31 @@
   <a href="./api/tasks">View Tasks</a>
   <a href="./api/tasks?completed=true">View Completed Tasks</a>
   <script src="server.js"></script>
+  You should be able to run the following commands from postman/thunder on local and deployed:
+<pre>
+# Get all tasks
+GET http://localhost:3000/api/tasks
+
+# Get filtered tasks
+GET http://localhost:3000/api/tasks?completed=true
+
+# Create task
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+{
+    "title": "New Task",
+    "categoryId": 1
+}
+
+# Update task
+PUT http://localhost:3000/api/tasks/1
+Content-Type: application/json
+{
+    "completed": true
+}
+
+# Delete task
+DELETE http://localhost:3000/api/tasks/1
+</pre>
 </body>
 </html>
