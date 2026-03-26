@@ -1,0 +1,24 @@
+{
+  "name": "diyexpressonfirebase",
+  "version": "1.0.0",
+  "description": "Handbuilt pseudo-Express on firebase as an instructional tool",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobbyreed/DIYExpressOnFirebase.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/bobbyreed/DIYExpressOnFirebase/issues"
+  },
+  "homepage": "https://github.com/bobbyreed/DIYExpressOnFirebase#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

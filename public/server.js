@@ -2,7 +2,6 @@ import express from 'express';
 import logger from './middleware/logger.js';
 import { notFound, errorHandler } from './middleware/errorHandler.js';
 import tasksRouter from './routes/tasks.js';
-import categoriesRouter from './routes/categories.js';
 
 const app = express();
 const PORT = 3000;
@@ -17,12 +16,11 @@ app.use(logger);
 app.get('/', (req, res) => {
     res.json({
         message: 'Task Management API',
-        endpoints: { tasks: '/api/tasks', categories: '/api/categories' }
+        endpoints: { tasks: '/api/tasks'}
     });
 });
 
 app.use('/api/tasks', tasksRouter);
-app.use('/api/categories', categoriesRouter);
 
 // Error handling (must be last!)
 app.use(notFound);
